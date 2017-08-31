@@ -1,0 +1,29 @@
+{
+  "name": "travis-browserstack-example",
+  "version": "1.0.0",
+  "description": "Example of running Nightwatch tests in travis, using Browserstack browsers",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "http-server -c0 ./src",
+    "test": "node run-bs-local-tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimmobrunfeldt/travis-browserstack-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kimmobrunfeldt/travis-browserstack-example/issues"
+  },
+  "homepage": "https://github.com/kimmobrunfeldt/travis-browserstack-example#readme",
+  "dependencies": {
+    "browserstack-local": "^1.3.0",
+    "http-server": "^0.10.0",
+    "mocha": "^3.5.0",
+    "nightwatch": "^0.9.16"
+  }
+}
